@@ -1,0 +1,27 @@
+.design {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+}
+
+
+.design:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 40px;
+    background: red;
+    animation: writting .5s infinite;
+}
+
+@keyframes writting {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
